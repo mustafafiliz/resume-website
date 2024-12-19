@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { IconType } from "react-icons";
 import { FaCode, FaMobileAlt, FaLaptopCode } from "react-icons/fa";
 
 export default function About() {
@@ -66,7 +67,7 @@ function SkillCard({
   title,
   description,
 }: {
-  icon: any;
+  icon: IconType;
   title: string;
   description: string;
 }) {

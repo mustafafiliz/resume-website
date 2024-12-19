@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { IconType } from "react-icons";
 import { FaLinkedin, FaYoutube, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
@@ -40,7 +41,7 @@ function ContactItem({
   link,
   text,
 }: {
-  icon: any;
+  icon: IconType;
   link: string;
   text: string;
 }) {
