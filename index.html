@@ -69,7 +69,7 @@ p{margin:0}
 @media (max-width:860px){.nav ul{display:none}.nav .btn{margin-left:auto}}
 
 /* hero */
-.hero{position:relative;padding-top:160px;overflow:hidden;--mx:75%;--my:25%}
+.hero{position:relative;padding-top:136px;overflow:hidden;--mx:75%;--my:25%}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(520px circle at var(--mx) var(--my),rgba(255,255,255,.07),transparent 60%);pointer-events:none}
 .hero .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:96px 96px;opacity:.45;mask-image:radial-gradient(70% 60% at 50% 30%,#000,transparent);pointer-events:none}
 .hero .wrap{position:relative;z-index:1}
@@ -78,12 +78,12 @@ p{margin:0}
 .pulse{width:8px;height:8px;border-radius:50%;background:var(--ok);position:relative}
 .pulse::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--ok);animation:ring 2s var(--ease) infinite}
 @keyframes ring{from{transform:scale(.4);opacity:1}to{transform:scale(1.6);opacity:0}}
-.hero h1{margin-top:56px;font-size:clamp(46px,9.6vw,156px);font-variation-settings:"wdth" 125;font-weight:850;text-transform:uppercase;line-height:.9;letter-spacing:-.035em}
+.hero h1{margin-top:44px;font-size:clamp(36px,6.2vw,100px);font-variation-settings:"wdth" 125;font-weight:850;text-transform:uppercase;line-height:.9;letter-spacing:-.035em}
 .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.04em}
 .hero h1 .ln>span{display:inline-block}
 .ghost{color:transparent;-webkit-text-stroke:1.5px var(--fg)}
 .hero-foot{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-top:48px}
-.hero-foot p{font-size:clamp(18px,1.6vw,22px);color:var(--mute);max-width:46ch;line-height:1.45}
+.hero-foot p{font-size:clamp(16px,1.3vw,19px);color:var(--mute);max-width:46ch;line-height:1.45}
 .hero-foot p b{color:var(--fg);font-weight:600}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
 @media (max-width:860px){.hero{padding-top:124px}.hero-foot{grid-template-columns:1fr}}
@@ -95,7 +95,7 @@ p{margin:0}
 .marq-track{display:flex;width:max-content;animation:slide 45s linear infinite}
 .marq:hover .marq-track{animation-play-state:paused}
 @keyframes slide{to{transform:translateX(-50%)}}
-.mk{display:flex;align-items:center;gap:14px;padding:0 40px;white-space:nowrap;font-size:22px;font-weight:650;letter-spacing:-.01em;color:var(--mute);transition:color .3s}
+.mk{display:flex;align-items:center;gap:10px;padding:0 30px;white-space:nowrap;font-size:17px;font-weight:650;letter-spacing:-.01em;color:var(--mute);transition:color .3s}
 .mk:hover{color:var(--fg)}
 .mk .ic{width:18px;height:18px;border-radius:5px;overflow:hidden;flex:none;display:grid;place-items:center;filter:grayscale(1) brightness(1.1);opacity:.75;transition:filter .4s,opacity .4s}
 .mk:hover .ic{filter:none;opacity:1}
@@ -107,72 +107,58 @@ p{margin:0}
 .nums{display:grid;grid-template-columns:repeat(4,1fr);padding-block:72px 40px}
 .nums div{padding-right:24px}
 .nums div+div{padding-left:28px;border-left:1px solid var(--line)}
-.nums b{display:block;font-size:clamp(44px,5.6vw,84px);font-weight:800;font-variation-settings:"wdth" 115;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.nums b{display:block;font-size:clamp(34px,3.8vw,56px);font-weight:800;font-variation-settings:"wdth" 115;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
 .nums b sup{font-size:.45em;vertical-align:.9em;color:var(--dim);margin-left:2px}
 .nums span{display:block;margin-top:12px;color:var(--mute);font-size:15px;max-width:22ch}
 @media (max-width:860px){.nums{grid-template-columns:1fr 1fr;row-gap:40px}.nums div:nth-child(3){padding-left:0;border-left:0}}
 
 /* sections */
-section{padding-block:128px}
-.head{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;margin-bottom:64px}
-.head h2{font-size:clamp(48px,8vw,128px);font-variation-settings:"wdth" 125;text-transform:uppercase;letter-spacing:-.04em}
+section{padding-block:96px}
+.head{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;margin-bottom:44px}
+.head h2{font-size:clamp(34px,4.8vw,72px);font-variation-settings:"wdth" 125;text-transform:uppercase;letter-spacing:-.04em}
 .head h2 small{font:500 .16em/1 var(--f-mono);vertical-align:top;margin-left:12px;color:var(--dim);letter-spacing:0}
-.head p{max-width:38ch;color:var(--mute);font-size:17px}
+.head p{max-width:38ch;color:var(--mute);font-size:15.5px}
 @media (max-width:760px){.head{grid-template-columns:1fr}section{padding-block:96px}}
 
-/* work cards */
-.work{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.card{--glow:255,255,255;--mx:50%;--my:50%;position:relative;display:flex;flex-direction:column;gap:28px;padding:32px;min-height:340px;border-radius:24px;background:var(--bg-2);border:1px solid var(--line);text-decoration:none;color:inherit;overflow:hidden;isolation:isolate;transition:border-color .4s,transform .6s var(--ease)}
-.card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .5s;background:radial-gradient(480px circle at var(--mx) var(--my),rgba(var(--glow),.22),transparent 60%)}
-.card::after{content:"";position:absolute;inset:-1px;z-index:-1;border-radius:inherit;padding:1px;opacity:0;transition:opacity .5s;background:radial-gradient(360px circle at var(--mx) var(--my),rgba(var(--glow),.9),transparent 60%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+/* work reel */
+.reel{position:relative;overflow:hidden;cursor:grab;touch-action:pan-y;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);padding-block:6px}
+.reel.drag{cursor:grabbing}
+.reel-track{display:flex;gap:16px;width:max-content;will-change:transform}
+.reel-hint{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;color:var(--dim)}
+.reel-hint a{text-decoration:none;color:var(--mute)}.reel-hint a:hover{color:var(--fg)}
+.card{--glow:255,255,255;--mx:50%;--my:50%;position:relative;flex:none;width:280px;height:360px;display:flex;flex-direction:column;gap:18px;padding:22px;border-radius:20px;background:var(--bg-2);border:1px solid var(--line);text-decoration:none;color:inherit;overflow:hidden;isolation:isolate;transition:border-color .4s,transform .5s var(--ease);user-select:none;-webkit-user-drag:none}
+.card img{-webkit-user-drag:none;pointer-events:none}
+.card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .5s;background:radial-gradient(320px circle at var(--mx) var(--my),rgba(var(--glow),.22),transparent 60%)}
+.card::after{content:"";position:absolute;inset:-1px;z-index:-1;border-radius:inherit;padding:1px;opacity:0;transition:opacity .5s;background:radial-gradient(240px circle at var(--mx) var(--my),rgba(var(--glow),.9),transparent 60%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
 .card:hover::before,.card:hover::after{opacity:1}
-.card:hover{border-color:var(--line-2)}
-.card.big{grid-column:1/-1;min-height:460px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:stretch}
-.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
-.app{width:28px;height:28px;border-radius:7px;overflow:hidden;flex:none;box-shadow:0 20px 40px -18px rgba(var(--glow),.7),0 0 0 1px rgba(255,255,255,.08);transition:transform .7s var(--ease)}
-.card:hover .app{transform:translateY(-4px) rotate(-4deg) scale(1.04)}
+.card:hover{border-color:var(--line-2);transform:translateY(-4px)}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.card-mid{margin-top:auto}
+.app{width:28px;height:28px;border-radius:7px;overflow:hidden;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.08)}
 .app img{width:100%;height:100%;object-fit:cover}
 .app.w{background:#fff}.app.w img{object-fit:contain;padding:3px}
 .mk .ic.w{background:#fff}.mk .ic.w img{object-fit:contain;padding:2px}
-.app.txt{display:grid;place-items:center;background:var(--bg-3);font:800 16px/1 var(--f-display);letter-spacing:-.04em}
-.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid var(--line-2);color:var(--mute)}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border-radius:999px;border:1px solid var(--line-2);color:var(--mute);font-size:10.5px}
 .pill i{width:6px;height:6px;border-radius:50%;background:var(--ok)}
 .pill.soon i{background:#FBBF24}
-.card h3{font-size:clamp(36px,4.4vw,64px);font-variation-settings:"wdth" 118;letter-spacing:-.04em}
-.card .desc{color:var(--mute);font-size:17px;max-width:44ch;margin-top:14px}
-.card .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-top:24px;border-top:1px solid var(--line)}
-.card .meta{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--mute)}
+.card h3{font-size:28px;font-variation-settings:"wdth" 112;letter-spacing:-.03em}
+.card .desc{color:var(--mute);font-size:14.5px;line-height:1.5;margin-top:10px}
+.card .foot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:16px;border-top:1px solid var(--line)}
+.card .meta{display:flex;flex-wrap:wrap;gap:4px 14px;color:var(--mute);font-size:11px}
 .card .meta b{color:var(--fg);font-weight:500}
-.go{width:52px;height:52px;flex:none;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;font-size:20px;transition:transform .5s var(--ease),background .3s,color .3s,border-color .3s}
+.go{width:38px;height:38px;flex:none;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;font-size:16px;transition:transform .5s var(--ease),background .3s,color .3s,border-color .3s}
 .card:hover .go{transform:rotate(-45deg);background:var(--fg);color:var(--bg);border-color:var(--fg)}
-.wordmark{position:relative;border-radius:18px;background:var(--bg);border:1px solid var(--line);display:grid;place-items:center;padding:40px;overflow:hidden}
-.wordmark::before{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(rgba(var(--glow),.28),transparent 65%);filter:blur(20px);transition:transform 1.2s var(--ease)}
-.card:hover .wordmark::before{transform:scale(1.25)}
-.wordmark .lock{position:relative;display:flex;align-items:center;gap:22px}
-.wordmark .big-ic{width:72px;height:72px;flex:none;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -24px rgba(var(--glow),.9);transition:transform .8s var(--ease)}
-.card:hover .wordmark .big-ic{transform:rotate(-8deg) scale(1.06)}
-.wordmark .big-ic img{width:100%;height:100%;object-fit:contain}
-.wordmark .wm{font-size:clamp(40px,5vw,80px);font-weight:800;letter-spacing:-.05em}
-.inv{filter:brightness(0) invert(1)}
-@media (max-width:900px){.work{grid-template-columns:1fr}.card.big{grid-template-columns:1fr}.card{padding:26px;min-height:0}.wordmark{min-height:220px}}
-
-.more{margin-top:64px;border-top:1px solid var(--line)}
-.more a{display:grid;grid-template-columns:1.1fr 1.3fr .5fr auto;gap:20px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .4s var(--ease),background .3s}
-.more a:hover{padding-left:18px;padding-right:18px;background:var(--bg-2)}
-.more b{font-size:clamp(22px,2.4vw,32px);font-weight:700;font-variation-settings:"wdth" 112;letter-spacing:-.02em}
-.more span{color:var(--mute)}
-.mrow{display:flex;align-items:center;gap:14px}.mrow img{width:18px;height:18px;border-radius:5px}
-@media (max-width:760px){.more a{grid-template-columns:1fr auto}.more a span:nth-of-type(-n+2){display:none}}
+@media (max-width:600px){.card{width:240px;height:320px}}
 
 /* services */
 .svc{border-top:1px solid var(--line)}
-.svc-row{display:grid;grid-template-columns:80px 1.1fr 1.4fr;gap:28px;padding:40px 0;border-bottom:1px solid var(--line);position:relative;transition:padding .5s var(--ease)}
+.svc-row{display:grid;grid-template-columns:80px 1.1fr 1.4fr;gap:28px;padding:30px 0;border-bottom:1px solid var(--line);position:relative;transition:padding .5s var(--ease)}
 .svc-row::before{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:var(--fg);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
 .svc-row:hover::before{transform:scaleX(1)}
 .svc-row:hover{padding-left:18px}
 .svc-row .n{color:var(--dim);padding-top:10px}
-.svc-row h3{font-size:clamp(30px,3.6vw,52px);font-variation-settings:"wdth" 118;text-transform:uppercase;letter-spacing:-.03em;transition:color .3s}
-.svc-row p{color:var(--mute);font-size:17px;max-width:48ch}
+.svc-row h3{font-size:clamp(24px,2.6vw,36px);font-variation-settings:"wdth" 118;text-transform:uppercase;letter-spacing:-.03em;transition:color .3s}
+.svc-row p{color:var(--mute);font-size:15.5px;max-width:48ch}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .chips span{padding:8px 13px;border:1px solid var(--line-2);border-radius:999px;font:500 12px/1 var(--f-mono)}
 @media (max-width:860px){.svc-row{grid-template-columns:1fr;gap:12px}.svc-row .n{padding-top:0}}
@@ -184,7 +170,7 @@ section{padding-block:128px}
 .steps li{position:relative}
 .steps li::before{content:"";position:absolute;top:-54px;left:0;width:13px;height:13px;border-radius:50%;background:var(--bg);border:1px solid var(--fg)}
 .steps .when{color:var(--dim)}
-.steps h3{font-size:clamp(24px,2.2vw,30px);font-variation-settings:"wdth" 112;margin-top:14px;letter-spacing:-.02em}
+.steps h3{font-size:clamp(20px,1.8vw,24px);font-variation-settings:"wdth" 112;margin-top:14px;letter-spacing:-.02em}
 .steps p{margin-top:12px;color:var(--mute)}
 @media (max-width:860px){.steps{grid-template-columns:1fr 1fr;row-gap:48px}.steps::before,.steps .fill,.steps li::before{display:none}.steps li{border-top:1px solid var(--line-2);padding-top:20px}}
 @media (max-width:520px){.steps{grid-template-columns:1fr}}
@@ -195,7 +181,7 @@ section{padding-block:128px}
 .portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .8s var(--ease)}
 .portrait:hover img{filter:none}
 .portrait .cap{position:absolute;left:14px;bottom:14px;right:14px;display:flex;justify-content:space-between;background:rgba(8,8,10,.6);backdrop-filter:blur(8px);padding:12px 14px;border-radius:12px}
-.about .big{font-size:clamp(26px,2.8vw,40px);font-weight:600;letter-spacing:-.02em;line-height:1.15}
+.about .big{font-size:clamp(22px,2.2vw,30px);font-weight:600;letter-spacing:-.02em;line-height:1.15}
 .about .big em{font-style:normal;color:var(--mute)}
 .about p.body{margin-top:24px;color:var(--mute);font-size:17px;max-width:58ch}
 .xp{list-style:none;margin:48px 0 0;padding:0;border-top:1px solid var(--line)}
@@ -208,7 +194,7 @@ section{padding-block:128px}
 @media (max-width:600px){.xp li{grid-template-columns:1fr;gap:4px}}
 
 /* contact */
-.cta-big{font-size:clamp(52px,11vw,180px);font-variation-settings:"wdth" 125;text-transform:uppercase;letter-spacing:-.045em;line-height:.88}
+.cta-big{font-size:clamp(38px,6.8vw,108px);font-variation-settings:"wdth" 125;text-transform:uppercase;letter-spacing:-.045em;line-height:.88}
 .cgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;margin-top:72px;align-items:start}
 .direct div{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
 .direct small{display:block;color:var(--dim);margin-bottom:4px}
@@ -253,8 +239,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .post-hero{--glow:255,255,255;position:relative;padding-block:72px 0}
 
 .post-hero .app{width:36px;height:36px;border-radius:9px}
-.post-hero h1{font-size:clamp(52px,9vw,140px);font-variation-settings:"wdth" 125;text-transform:uppercase;letter-spacing:-.045em;margin-top:32px}
-.post-hero .lede{margin-top:24px;font-size:clamp(20px,2vw,26px);line-height:1.35;max-width:38ch;color:var(--mute)}
+.post-hero h1{font-size:clamp(38px,6vw,88px);font-variation-settings:"wdth" 125;text-transform:uppercase;letter-spacing:-.045em;margin-top:32px}
+.post-hero .lede{margin-top:20px;font-size:clamp(17px,1.6vw,21px);line-height:1.35;max-width:38ch;color:var(--mute)}
 .post-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);margin-top:56px}
 .post-facts div{padding:18px 18px 0 0}
 .post-facts div+div{padding-left:18px;border-left:1px solid var(--line)}
@@ -266,12 +252,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .post-body .side a{color:var(--dim);text-decoration:none;transition:color .2s}
 .post-body .side a:hover{color:var(--fg)}
 .post-body article{display:grid;gap:64px;max-width:72ch}
-.post-body h2{font-size:clamp(28px,3vw,40px);font-variation-settings:"wdth" 112;letter-spacing:-.03em;margin-bottom:18px}
-.post-body p{color:var(--mute);font-size:18px;line-height:1.65}
+.post-body h2{font-size:clamp(24px,2.4vw,32px);font-variation-settings:"wdth" 112;letter-spacing:-.03em;margin-bottom:18px}
+.post-body p{color:var(--mute);font-size:16.5px;line-height:1.65}
 .post-body p+p{margin-top:14px}
 .role{background:var(--bg-2);border:1px solid var(--line);border-radius:20px;padding:30px}
 .role .mono{color:var(--dim)}
-.role p{color:var(--fg);font-size:21px;line-height:1.45;margin-top:12px;letter-spacing:-.01em}
+.role p{color:var(--fg);font-size:18px;line-height:1.45;margin-top:12px;letter-spacing:-.01em}
 .built{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .built li{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
 .built li .mono{color:var(--dim);padding-top:5px}
@@ -281,10 +267,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .stackg div{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start}
 .stackg small{color:var(--dim);padding-top:8px}
 .stackg .chips{margin-top:0}
-.result{font-size:clamp(22px,2.4vw,30px) !important;color:var(--fg) !important;line-height:1.3 !important;letter-spacing:-.015em;font-weight:500}
+.result{font-size:clamp(19px,1.9vw,24px) !important;color:var(--fg) !important;line-height:1.3 !important;letter-spacing:-.015em;font-weight:500}
 .post-next a{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:64px;text-decoration:none;border-top:1px solid var(--line)}
 .post-next small{color:var(--dim)}
-.post-next b{display:block;margin-top:12px;font-size:clamp(40px,7vw,104px);font-variation-settings:"wdth" 125;text-transform:uppercase;letter-spacing:-.045em;line-height:.9}
+.post-next b{display:block;margin-top:12px;font-size:clamp(32px,5vw,72px);font-variation-settings:"wdth" 125;text-transform:uppercase;letter-spacing:-.045em;line-height:.9}
 .post-next .go{width:84px;height:84px;font-size:30px}
 .post-next a:hover .go{transform:rotate(-45deg);background:var(--fg);color:var(--bg);border-color:var(--fg)}
 @media (max-width:900px){.post-body{grid-template-columns:1fr;gap:28px}.post-body .side{position:static;display:flex;flex-wrap:wrap;gap:10px 20px}}
@@ -368,55 +354,106 @@ body.reading{overflow:hidden}
   <section id="work">
     <div class="wrap">
       <div class="head">
-        <h2>Selected<br>work<small>(06)</small></h2>
+        <h2>Selected<br>work<small>(09)</small></h2>
         <p>Products I've built or worked on. Open a project to see what I was responsible for.</p>
       </div>
 
-      <div class="work">
+    </div>
+    <div class="reel" id="reel" aria-label="Projects, scrolls sideways">
+      <div class="reel-track" id="reelTrack">
         <a class="card" href="#basvuro" data-id="basvuro" style="--glow:34,197,94">
-            <div class="card-top"><span class="app w"><img src="logos/basvuro.png" alt="Basvuro icon"></span><span class="pill soon mono"><i></i>Launching soon</span></div>
-            <div><h3>Basvuro</h3><p class="desc">An AI job application app. Swipe right on a role and an agent sends a tailored application from your own Gmail, then tracks it for you.</p></div>
-            <div class="foot"><div class="meta mono"><b>Full Stack</b><span>AI · Mobile</span><span>2026</span></div><span class="go">→</span></div>
+          <div class="card-top"><span class="app w"><img src="logos/basvuro.png" alt=""></span><span class="pill soon mono"><i></i>Soon</span></div>
+          <div class="card-mid"><h3>Basvuro</h3><p class="desc">AI job applications. Swipe right on a role and an agent applies from your own Gmail.</p></div>
+          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2026</span></div><span class="go">→</span></div>
         </a>
-
         <a class="card" href="#teyr-ai" data-id="teyr-ai" style="--glow:92,157,255">
-            <div class="card-top"><span class="app"><img src="logos/teyr.svg" alt="Teyr.ai app icon"></span><span class="pill mono"><i></i>Live</span></div>
-            <div><h3>Teyr.ai</h3><p class="desc">An AI phone assistant that answers business calls around the clock, records what callers need and hands over to a person when needed.</p></div>
-            <div class="foot"><div class="meta mono"><b>Frontend</b><span>Voice AI</span><span>2026</span></div><span class="go">→</span></div>
+          <div class="card-top"><span class="app"><img src="logos/teyr.svg" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Teyr.ai</h3><p class="desc">AI phone assistant that answers every business call, day and night.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2026</span></div><span class="go">→</span></div>
         </a>
-
         <a class="card" href="#bitalih" data-id="bitalih" style="--glow:255,92,40">
-          <div class="card-top"><span class="app"><img src="logos/bitalih.png" alt="Bitalih app icon"></span><span class="pill mono"><i></i>Live</span></div>
-          <div><h3>Bitalih</h3><p class="desc">Horse racing and betting platform. I worked on live race tracking, odds and betting flows.</p></div>
-          <div class="foot"><div class="meta mono"><b>Frontend</b><span>Real-time</span><span>2025–26</span></div><span class="go">→</span></div>
+          <div class="card-top"><span class="app"><img src="logos/bitalih.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Bitalih</h3><p class="desc">Horse racing and betting platform. Live race tracking, odds and bet flows.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2025–26</span></div><span class="go">→</span></div>
         </a>
-
         <a class="card" href="#online-cekici" data-id="online-cekici" style="--glow:211,255,82">
-          <div class="card-top"><span class="app"><img src="logos/cekici.svg" alt="Online Çekici app icon"></span><span class="pill mono"><i></i>App Store · Google Play</span></div>
-          <div><h3>Online Çekici</h3><p class="desc">Roadside assistance in two apps, one for drivers and one for customers, with the backend that matches them.</p></div>
-          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2 apps</span><span>2024–25</span></div><span class="go">→</span></div>
+          <div class="card-top"><span class="app"><img src="logos/cekici.svg" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Online Çekici</h3><p class="desc">Roadside assistance in two apps, for drivers and customers.</p></div>
+          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2024–25</span></div><span class="go">→</span></div>
         </a>
-
         <a class="card" href="#banausta" data-id="banausta" style="--glow:216,38,53">
-          <div class="card-top"><span class="app" style="background:#fff"><img src="logos/banausta-icon.png" alt="Banausta app icon"></span><span class="pill mono"><i></i>App Store · Google Play</span></div>
-          <div><h3>Banausta</h3><p class="desc">Web platform and iOS/Android app, built and launched end to end with shared logic across both.</p></div>
-          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>Web · Mobile</span><span>2024–25</span></div><span class="go">→</span></div>
+          <div class="card-top"><span class="app w"><img src="logos/banausta-icon.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Banausta</h3><p class="desc">Web platform and iOS/Android app, built and launched end to end.</p></div>
+          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2024–25</span></div><span class="go">→</span></div>
         </a>
-
         <a class="card" href="#vizzly" data-id="vizzly" style="--glow:45,140,130">
-          <div class="card-top"><span class="app w"><img src="logos/vizzly-mark.svg" alt="Vizzly icon"></span><span class="pill mono">Web · Mobile</span></div>
-          <div><h3>Vizzly</h3><p class="desc">A marketplace for digital ad screens: find a location, book a screen and run the campaign.</p></div>
-          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>Marketplace</span><span>2024</span></div><span class="go">→</span></div>
+          <div class="card-top"><span class="app w"><img src="logos/vizzly-mark.svg" alt=""></span><span class="pill mono">Web · Mobile</span></div>
+          <div class="card-mid"><h3>Vizzly</h3><p class="desc">Marketplace for digital ad screens: find, book, run the campaign.</p></div>
+          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2024</span></div><span class="go">→</span></div>
         </a>
-      </div>
-
-      <div class="more">
-        <a href="#idefix"><b class="mrow"><img src="logos/idefix.png" alt="" style="background:#fff;padding:3px">Idefix.com</b><span>E-commerce storefront &amp; Seller Panel</span><span class="mono">via PATH</span><span>→</span></a>
-        <a href="#idefix"><b class="mrow"><img src="logos/tuttur.png" alt="">Tuttur.com</b><span>Betting platform · real-time features</span><span class="mono">via PATH</span><span>→</span></a>
-        <a href="#about"><b class="mrow"><img src="logos/ofix.png" alt="">Ofix.com</b><span>Office supplies e-commerce · Nuxt.js</span><span class="mono">2021–22</span><span>→</span></a>
-        <a href="https://www.youtube.com/@mustafafiliz" target="_blank" rel="noopener"><b>YouTube</b><span>120+ JavaScript &amp; React tutorials</span><span class="mono">Since 2020</span><span>↗</span></a>
+        <a class="card" href="#idefix" data-id="idefix" style="--glow:255,170,60">
+          <div class="card-top"><span class="app w"><img src="logos/idefix.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Idefix.com</h3><p class="desc">Storefront and Seller Panel of a large Turkish online retailer.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2022–24</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#tuttur" data-id="tuttur" style="--glow:0,140,230">
+          <div class="card-top"><span class="app"><img src="logos/tuttur.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Tuttur.com</h3><p class="desc">Sports betting platform. Real-time features with Socket.IO.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2023</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#ofix" data-id="ofix" style="--glow:245,200,30">
+          <div class="card-top"><span class="app"><img src="logos/ofix.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Ofix.com</h3><p class="desc">B2B office supplies e-commerce, rebuilt as v4.0 in Nuxt.js.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2021–22</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#basvuro" aria-hidden="true" tabindex="-1" style="--glow:34,197,94">
+          <div class="card-top"><span class="app w"><img src="logos/basvuro.png" alt=""></span><span class="pill soon mono"><i></i>Soon</span></div>
+          <div class="card-mid"><h3>Basvuro</h3><p class="desc">AI job applications. Swipe right on a role and an agent applies from your own Gmail.</p></div>
+          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2026</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#teyr-ai" aria-hidden="true" tabindex="-1" style="--glow:92,157,255">
+          <div class="card-top"><span class="app"><img src="logos/teyr.svg" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Teyr.ai</h3><p class="desc">AI phone assistant that answers every business call, day and night.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2026</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#bitalih" aria-hidden="true" tabindex="-1" style="--glow:255,92,40">
+          <div class="card-top"><span class="app"><img src="logos/bitalih.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Bitalih</h3><p class="desc">Horse racing and betting platform. Live race tracking, odds and bet flows.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2025–26</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#online-cekici" aria-hidden="true" tabindex="-1" style="--glow:211,255,82">
+          <div class="card-top"><span class="app"><img src="logos/cekici.svg" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Online Çekici</h3><p class="desc">Roadside assistance in two apps, for drivers and customers.</p></div>
+          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2024–25</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#banausta" aria-hidden="true" tabindex="-1" style="--glow:216,38,53">
+          <div class="card-top"><span class="app w"><img src="logos/banausta-icon.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Banausta</h3><p class="desc">Web platform and iOS/Android app, built and launched end to end.</p></div>
+          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2024–25</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#vizzly" aria-hidden="true" tabindex="-1" style="--glow:45,140,130">
+          <div class="card-top"><span class="app w"><img src="logos/vizzly-mark.svg" alt=""></span><span class="pill mono">Web · Mobile</span></div>
+          <div class="card-mid"><h3>Vizzly</h3><p class="desc">Marketplace for digital ad screens: find, book, run the campaign.</p></div>
+          <div class="foot"><div class="meta mono"><b>Full Stack</b><span>2024</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#idefix" aria-hidden="true" tabindex="-1" style="--glow:255,170,60">
+          <div class="card-top"><span class="app w"><img src="logos/idefix.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Idefix.com</h3><p class="desc">Storefront and Seller Panel of a large Turkish online retailer.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2022–24</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#tuttur" aria-hidden="true" tabindex="-1" style="--glow:0,140,230">
+          <div class="card-top"><span class="app"><img src="logos/tuttur.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Tuttur.com</h3><p class="desc">Sports betting platform. Real-time features with Socket.IO.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2023</span></div><span class="go">→</span></div>
+        </a>
+        <a class="card" href="#ofix" aria-hidden="true" tabindex="-1" style="--glow:245,200,30">
+          <div class="card-top"><span class="app"><img src="logos/ofix.png" alt=""></span><span class="pill mono"><i></i>Live</span></div>
+          <div class="card-mid"><h3>Ofix.com</h3><p class="desc">B2B office supplies e-commerce, rebuilt as v4.0 in Nuxt.js.</p></div>
+          <div class="foot"><div class="meta mono"><b>Frontend</b><span>2021–22</span></div><span class="go">→</span></div>
+        </a>
       </div>
     </div>
+    <div class="wrap reel-hint mono"><span>Drag or scroll sideways</span><a href="https://www.youtube.com/@mustafafiliz" target="_blank" rel="noopener">Also: 120+ tutorials on YouTube ↗</a></div>
   </section>
 
   <!-- SERVICES -->
@@ -563,7 +600,7 @@ body.reading{overflow:hidden}
     gsap.registerPlugin(ScrollTrigger);
     gsap.from('.hero h1 .ln>span',{yPercent:110,duration:1.1,ease:'expo.out',stagger:.09,delay:.1});
     gsap.from('.hero-foot>*',{y:30,duration:1,ease:'expo.out',stagger:.1,delay:.45});
-    gsap.utils.toArray('.card, .svc-row, .more a, .steps li, .xp li').forEach(function(el){gsap.from(el,{y:50,duration:1,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 94%'}})});
+    gsap.utils.toArray('.svc-row, .steps li, .xp li').forEach(function(el){gsap.from(el,{y:50,duration:1,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 94%'}})});
     gsap.utils.toArray('.head h2, .cta-big').forEach(function(el){gsap.from(el,{y:60,duration:1.2,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 90%'}})});
     var steps=document.getElementById('steps');
     gsap.fromTo(steps,{'--p':0},{'--p':1,ease:'none',scrollTrigger:{trigger:steps,start:'top 80%',end:'bottom 55%',scrub:true}});
@@ -591,6 +628,23 @@ body.reading{overflow:hidden}
     done.hidden=false;done.scrollIntoView({behavior:'smooth',block:'nearest'});
   });
   document.getElementById('q-copy').addEventListener('click',function(e){copyText(body,e.currentTarget,'q-out')});
+
+  /* infinite reel: auto-moves, pauses on hover, drag/scroll to move */
+  (function(){
+    var reel=document.getElementById('reel'),track=document.getElementById('reelTrack');
+    var x=0,v=reduce?0:.45,target=v,half=0,down=false,sx=0,ox=0,moved=0,last=0,vel=0;
+    function measure(){half=track.scrollWidth/2}
+    function wrap(){if(!half)return;while(x<=-half)x+=half;while(x>0)x-=half}
+    measure();addEventListener('resize',measure);addEventListener('load',measure);
+    reel.addEventListener('mouseenter',function(){target=0});
+    reel.addEventListener('mouseleave',function(){target=reduce?0:.45});
+    reel.addEventListener('pointerdown',function(e){down=true;moved=0;sx=e.clientX;ox=x;last=e.clientX;vel=0;reel.classList.add('drag')});
+    addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-sx;moved=Math.max(moved,Math.abs(dx));x=ox+dx;vel=e.clientX-last;last=e.clientX;wrap()});
+    addEventListener('pointerup',function(){if(!down)return;down=false;reel.classList.remove('drag');x+=vel*6;wrap()});
+    reel.addEventListener('click',function(e){if(moved>6){e.preventDefault();e.stopPropagation()}},true);
+    reel.addEventListener('wheel',function(e){if(Math.abs(e.deltaX)>Math.abs(e.deltaY)){e.preventDefault();x-=e.deltaX;wrap()}},{passive:false});
+    (function tick(){v+=(target-v)*.06;if(!down){x-=v;wrap()}track.style.transform='translate3d('+x+'px,0,0)';requestAnimationFrame(tick)})();
+  })();
 
   /* ---------- case studies ---------- */
   var P={
@@ -644,13 +698,27 @@ body.reading{overflow:hidden}
       stack:[['Frontend',['Next.js','React','TypeScript']],['Styling & state',['Tailwind CSS','SCSS','Redux','Socket.IO']]],
       result:'Work shipped to production on a store with thousands of daily shoppers.'}
   };
-  var order=['basvuro','teyr-ai','bitalih','online-cekici','banausta','vizzly','idefix'];
+  P['tuttur']={name:'Tuttur.com',cat:'Sports betting',lede:'A sports betting platform where odds and matches update live.',
+      facts:[['Role','Frontend Developer'],['Year','2023'],['Company','PATH'],['Status','Live']],
+      context:['Betting users expect odds, scores and coupons to update the moment something happens. The frontend has to reflect those changes instantly without becoming slow or confusing.'],
+      role:'As part of the PATH team, I worked on real-time features in the Tuttur.com frontend.',
+      built:[['Real-time updates','Live data in the interface through Socket.IO.'],['Interactive UI','React and TypeScript components for a more engaging betting experience.']],
+      stack:[['Frontend',['React','TypeScript','SCSS']],['Real-time',['Socket.IO']]],
+      result:'Real-time features shipped to a live betting platform.',link:['tuttur.com','https://www.tuttur.com']};
+  P['ofix']={name:'Ofix.com',cat:'E-commerce',lede:'B2B e-commerce for office supplies, delivered within one working day.',
+      facts:[['Role','Frontend Developer'],['Year','2021 — 2022'],['Platform','Web'],['Status','Live']],
+      context:['Ofix sells thousands of office products to businesses, with many different user roles on the platform.'],
+      role:'I maintained the existing frontend and worked on building version 4.0 from the ground up.',
+      built:[['Legacy system','Maintained and extended the existing Handlebars.js frontend.'],['Version 4.0','New frontend built with Nuxt.js, Vuex, SCSS and Bootstrap.']],
+      stack:[['Frontend',['Nuxt.js','Vue.js','Vuex']],['Styling',['SCSS','Bootstrap']]],
+      result:'Contributed to the new version of a live e-commerce platform.',link:['ofix.com','https://www.ofix.com']};
+  var order=['basvuro','teyr-ai','bitalih','online-cekici','banausta','vizzly','idefix','tuttur','ofix'];
   var postEl=document.getElementById('post'),pc=document.getElementById('post-content'),lastId=null;
   function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function render(id){
     var d=P[id],nx=order[(order.indexOf(id)+1)%order.length],card=document.querySelector('.card[data-id="'+id+'"]');
     var glow=card?card.style.getPropertyValue('--glow'):'255,255,255';
-    var app=card?card.querySelector('.app').outerHTML:(id==='idefix'?'<span class="app w"><img src="logos/idefix.png" alt="Idefix icon"></span>':'');
+    var app=card?card.querySelector('.app').outerHTML:'';
     var h='<div class="wrap"><div class="post-hero" style="--glow:'+glow+'">'+app+'<span class="mono" style="display:block;margin-top:28px;color:var(--dim)">'+esc(d.cat)+'</span><h1 id="post-title" tabindex="-1" style="margin-top:14px">'+esc(d.name)+'</h1><p class="lede">'+esc(d.lede)+'</p>'+
       '<dl class="post-facts">'+d.facts.map(function(f){return '<div><dt class="mono">'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd></div>'}).join('')+'</dl></div>'+
       '<div class="post-body"><nav class="side mono" aria-label="On this page"><a href="#" data-to="s1">The project</a><a href="#" data-to="s2">My role</a><a href="#" data-to="s3">What I built</a><a href="#" data-to="s4">Stack</a><a href="#" data-to="s6">Result</a></nav><article>'+
